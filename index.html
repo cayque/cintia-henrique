@@ -1,59 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en" >
 <head>
-  <title>cintia-henrique</title>
-  <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- <link href="/css/style.css" rel="stylesheet"> -->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  	<meta charset="UTF-8">
+  	<title>CodePen - Day 2: Event Invitation</title>
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+	<link rel="stylesheet" href="assets/css/materialize/materialize.min.css">
+   	<link rel="stylesheet" href="assets/css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body class="is-preload">
-  <div id="wrapper">
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    
-    <div id="wrapper">
 
-      <!-- Header -->
-      <header id="header">
-        <div class="logo">
-          <span class="icon fa-gem"></span>
-        </div>
-        <div class="content">
-          <div class="inner">
-            <h1>Dimension</h1>
-            <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-              for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
-            </div>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#intro">Intro</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <!--<li><a href="#elements">Elements</a></li>-->
-            </ul>
-          </nav>
-        </header>
-        
-        <div id="main">
-          <!-- Footer -->
-          <footer id="footer">
-            <span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-          </footer>
-          
-        </div>
-      </div>
-  </div>
-  <script>
-    window.onload = function() { document.body.classList.remove('is-preload'); }
-    window.ontouchmove = function() { return false; }
-    window.onorientationchange = function() { document.body.scrollTop = 0; }
-  </script>
+<body>
+<!-- partial:index.partial.html -->
+<section class="parallax-container" id="home">
+	<div class="parallax">
+		<img src="https://images.unsplash.com/photo-1515291149584-a527b3fea78c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=082d8f6b6da4af534cb049ddaabe9c45&auto=format&fit=crop&w=2100&q=80">
+	</div>
+
+	<nav>
+		<div class="nav-wrapper white">
+			<a href="#" class="brand-logo center">Our Wedding</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#wedding">Wedding</a></li>
+				<li><a href="#rsvp">RSVP</a></li>
+			</ul>
+			
+			<ul class="side-nav grey darken-4" id="mobile-demo">
+				<li><a href="#home">Home<i class="material-icons right">home</i></a></li>
+				<li><a href="#wedding">Wedding<i class="material-icons right">cake</i></a></li>
+				<li><a href="#rsvp">RSVP<i class="material-icons right">send</i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="container intro" >
+		<header class="center-align">
+			<h1>Jake & Alice</h1>
+			<h6>Are getting married!</h6>
+			<h5>10.11.2018</h5>
+		</header>
+	</section>
+</section>
+
+<section class="parallax-container" id="wedding">
+	<div class="parallax">
+		<img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-0.3.5&s=10bf87e15c19a025b7b69f3147983d14&auto=format&fit=crop&w=1950&q=80">
+	</div>
+	
+	<section class="info" >
+		<div class="row container center-align tdetails">
+			<header class="col s12">
+				<h1>The Wedding</h1>
+			</header>
+		</div>
+		
+		<div class="row container">
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>When</h4>
+					<p>Wedding Ceremony - 12:00pm</p>
+					<p>Reception & Dinner- 1:00pm</p>
+				</div>
+			</div>
+			
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>Where</h4>
+					<p>St. Marys Church</p>
+					<p>7689 Townsend Hall</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+
+<section class="parallax-container" id="rsvp">
+	<div class="parallax">
+		<img src="https://images.unsplash.com/photo-1515647433590-bd29995561a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb12326faa3207e1d8be58ded88a8dad&auto=format&fit=crop&w=1867&q=80">
+	</div>
+
+	<div class="row container center-align rsvp"  >
+		<header class="col s12">
+			<h1>WE Hope you can make it...</h1>
+			<h5>RSVP by September, 2018</h5>
+		</header>
+
+		<div class="col s12 center-align cta">
+			<a class="waves-effect waves-red btn-large white"><i class="material-icons right">send</i>RSVP</a>
+		</div>
+	</div>
+</section>
+
+<!-- partial -->
+<script src='assets/scripts/jquery/jquery.min.js'></script>
+<script src='assets/scripts/materialize/materialize.min.js'></script>
+<script src="assets/scripts/script.js"></script>
+
 </body>
 </html>

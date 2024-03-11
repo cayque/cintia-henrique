@@ -103,6 +103,11 @@ header h5 {
 	font-weight: 600;
 }
 
+.ctl>a {
+	color: #424242;
+	font-weight: 600;
+}
+
 
 @media (max-width:600px) {
 	

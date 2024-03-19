@@ -9,7 +9,7 @@ body {
 	color: #fff;
 }
 
-img {
+.img-fundo {
 	-webkit-filter: grayscale(90%) contrast(50%) brightness(50%);
 	filter: grayscale(50%) contrast(80%) brightness(50%);
 }
@@ -21,6 +21,10 @@ img {
 }
 
 /* Regular nav */
+
+.cor-menu {
+	background:#efeae0;
+}
 
 nav {
 	position: fixed;
@@ -131,3 +135,12 @@ header h5 {
 		font-size: 1.2em;
 	}
 }
+
+/* .uk{
+	height:100vh;
+	width:100vw;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+  }
+   */

@@ -147,13 +147,13 @@ header h5 {
 }
 
 .container-contador {
-	margin: 20px auto;
+	margin: 10px auto;
 	text-align: center;
   }
   
   .container-contador h2 {
 	font-weight: normal;
-	/* letter-spacing: .125rem; */
+	letter-spacing: .125rem;
 	text-transform: uppercase;
   }
   
@@ -170,7 +170,7 @@ header h5 {
 	font-size: 4.5rem;
   }
   
-  .container-contador .emoji {
+  /* .container-contador .emoji {
 	display: none;
 	padding: 1rem;
   }
@@ -178,4 +178,18 @@ header h5 {
   .container-contador .emoji span {
 	font-size: 4rem;
 	padding: 0 .5rem;
+  } */
+
+  @media all and (max-width: 768px) {
+	.container-contador h2 {
+	  font-size: calc(1.5rem * var(--smaller));
+	}
+	
+	.container-contador li {
+	  font-size: calc(1.125rem * var(--smaller));
+	}
+	
+	.container-contador li span {
+	  font-size: calc(3.375rem * var(--smaller));
+	}
   }

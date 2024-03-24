@@ -205,3 +205,46 @@ header h5 {
 	  font-size: calc(3.375rem * var(--smaller));
 	}
   }
+
+
+.frame-foto-color {
+	background: #efeae0;
+	z-index: -99;
+}
+
+.frame-foto {
+	position: relative;
+	z-index: -99;
+	margin-left: 40px;
+	margin-right: 40px;
+	overflow: hidden;
+	/* text-align: center; */
+  }
+
+.frame-foto img {
+	width: 1434px;
+	margin: auto;
+	display: block;
+	-webkit-filter: grayscale(90%) contrast(50%) brightness(50%);
+	filter: grayscale(40%) contrast(80%) brightness(70%);
+}
+
+.info-frame {
+	display: block;
+	/* align-items: center;
+	text-align: center; */
+	height: 100%;
+	/* margin-left: 70px;
+	margin-right: 70px; */
+}
+
+.info-frame-center{
+	background: #efeae0;
+	color: #515e30;
+	height: 100%;
+	width: 60%;
+	/* margin: -50px 0px 0px calc((100% - 980px)* 0.5); */
+	margin-top: -17%;
+	margin-left: auto;
+    margin-right: auto; 
+ }

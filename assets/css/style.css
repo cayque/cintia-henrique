@@ -209,12 +209,10 @@ header h5 {
 
 .frame-foto-color {
 	background: #efeae0;
-	z-index: -99;
 }
 
 .frame-foto {
 	position: relative;
-	z-index: -99;
 	margin-left: 40px;
 	margin-right: 40px;
 	overflow: hidden;
@@ -222,7 +220,8 @@ header h5 {
   }
 
 .frame-foto img {
-	width: 1434px;
+	width: calc(100% - 400px);
+	/* width: 1434px; */
 	margin: auto;
 	display: block;
 	-webkit-filter: grayscale(90%) contrast(50%) brightness(50%);
@@ -239,12 +238,15 @@ header h5 {
 }
 
 .info-frame-center{
+	position: relative;
 	background: #efeae0;
 	color: #515e30;
-	height: 100%;
-	width: 60%;
+	/* height: 100%; */
+	/* width: 1140px; */
+	width: calc(100% - 800px);
 	/* margin: -50px 0px 0px calc((100% - 980px)* 0.5); */
-	margin-top: -17%;
+	/* margin-top: -17%; */
+	top: -330px;
 	margin-left: auto;
     margin-right: auto; 
  }

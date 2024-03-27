@@ -1,89 +1,248 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en" >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Nosso casamento</title>
+	<link rel="shortcut icon" href="assets/image/Ícone transparente.png">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.9.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.9.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.9.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+	<link rel="stylesheet" href="assets/css/materialize/materialize.min.css">
+   	<link rel="stylesheet" href="assets/css/style.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<body>
+<!-- partial:index.partial.html -->
+<section class="parallax-container" id="home">
+	<div class="parallax">
+		<img class="img-logo" src="assets/image/Submarca_site.png">
+	</div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<nav>
+		<div class="nav-wrapper cor-menu">
+			<a href="#" class="brand-logo center">Nosso casamento</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="#home">Home</a></li>
+				<!-- <li><a href="#intro">Intro</a></li> -->
+				<li><a href="#cerimonia">Cerimônia</a></li>
+				<li><a href="#recepcao">Recepção</a></li>
+				<li><a href="#presenca">Presença</a></li>
+			</ul>
+			
+			<ul class="side-nav grey darken-4" id="mobile-demo">
+				<li><a href="#home">Home<i class="material-icons right">home</i></a></li>
+				<li><a href="#intro">Intro<i class="material-icons right">info</i></a></li>
+				<li><a href="#cerimonia">Cerimônia<i class="material-icons right">celebration</i></a></li>
+				<li><a href="#recepcao">Recepção<i class="material-icons right">cake</i></a></li>
+				<li><a href="#presenca">Presença<i class="material-icons right">send</i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- <section class="container intro" >
+		<header class="center-align">
+			<h1>Cintia & Henrique</h1>
+			<h6>Estão se casando!</h6>
+			<h5>25/10/2024</h5>
+		</header>
+	</section> -->
+</section>
+
+
+
+
+
+
+<section class="parallax-container" id="intro">
+	<div class="parallax">
+		<img class="img-fundo" src="./assets/image/cerimonia.jpg">
+	</div>
+	
+	<section class="info-intro" >
+		<div class="row container center-align tdetails">
+			<header class="col s12">
+				<h1>Ela disse sim!</h1>
+			</header>
+		</div>
+		
+		<div class="row container">
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>25/10/2024</h4>
+					<p>Fala pessoal! Criamos esse site para compartilhar com vocês os detalhes da organização do nosso casamento. Estamos preparando tudo com muito carinho pra receber vocês e queremos que seja um dia especial para todos. Especialmente conscientes de que muitos de vocês terão de fazer um esforcinho extra para acompanharem o capricho da noiva de casar no Rio de Janeiro!</p>
+					<p>Por isso, além de um pouquinho da nossa história, pretendemos compartilhar com vocês dicas para hospedagem, salão de beleza, trajes, estacionamento, etc...</p>
+					<p>Ah, é importante também confirmar sua presença! Para isto, contamos com sua ajuda clicando no menu “Confirme sua Presença” e preenchendo os dados necessários.</p>
+					<p>Colocamos aqui também a nossa Lista de Casamento para quem deseja nos presentear. Você pode escolher qualquer item da Lista de Casamento, seja um item de algum dos sites, lojas físicas, ou então vocês podem utilizar a opção de cotas. Fiquem à vontade!</p>
+					<p>Estamos muito felizes e contamos com a presença de todos no nosso grande dia!</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+</section>
+
+<section class="parallax-contador" >
+	<div class="container-contador">
+		<h2 id="headline">Contagem Regressiva</h2>
+		<div id="countdown">
+			<ul>
+				<li><span id="days"></span>Dias</li>
+				<li><span id="hours"></span>Horas</li>
+				<li><span id="minutes"></span>Minutos</li>
+				<li><span id="seconds"></span>Segundos</li>
+			</ul>
+		</div>
+		<!-- <div id="content" class="emoji">
+			<span>🥳</span>
+			<span>🎉</span>
+			<span>🎂</span>
+		</div> -->
+	</div>
+</section>
+
+<section class="parallax-container frame-foto-color" id="casal">
+	<div class="frame-foto">
+		<img src="assets/image/Casal.jpg">
+	</div>
+	
+	<section class="info-frame" >
+		
+		<div class="info-frame-center">
+			<div class="row container center-align tdetails" style="padding-top: 30px;">
+				<header class="col s12">
+					<h1>Cintia & Henrique</h1>
+				</header>
+			</div>
+			
+			<div class="row container">
+				<div class="col s12 center-align">
+					<div class="detail">
+						<h4>Casal</h4>
+						<p>Histórias de amor existem, e, às vezes, nem nós mesmos acreditamos todo o tempo que já estamos juntos. Porém, o brilho intenso e apaixonado dos nossos olhares nos fazem lembrar o porquê de chegarmos até aqui sem sentir tanto o tempo passar....</p>
+						<p>Vamos nos casar!</p>
+						<p>Estamos preparando tudo com muito carinho para curtirmos cada momento com nossos amigos e familiares queridos!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</section>
+</section>
+
+<section class="parallax-container" id="cerimonia">
+	<div class="parallax">
+		<img class="img-fundo" src="assets/image/Intro.jpg">
+	</div>
+	
+	<section class="info" >
+		<div class="row container center-align tdetails">
+			<header class="col s12">
+				<h1>Cerimônia</h1>
+			</header>
+		</div>
+		
+		<div class="row container">
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>Quando</h4>
+					<p>Cerimônia - 04:30am</p>
+				</div>
+			</div>
+			
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>Onde</h4>
+					<p>(Paróquia São José da Lagoa) Av. Borges de Medeiros, 2735 - Lagoa</p>
+					<p>Rio de Janeiro - RJ, 22470-001</p>
+				</div>
+			</div>
+
+			<div class="col s12 center-align cta top">
+				<a class="waves-effect waves-red btn-large white" href="https://maps.app.goo.gl/yfcqUiVtaZAMRn2g8"><i class="material-icons right primary">navigation</i>Navegar</a>
+			</div>
+
+		</div>
+	</section>
+</section>
+
+<section class="parallax-container" id="recepcao">
+	<div class="parallax">
+		<img class="img-fundo" src="./assets/image/recepcao.jpg">
+	</div>
+	
+	<section class="info" >
+		<div class="row container center-align tdetails">
+			<header class="col s12">
+				<h1>Recepção</h1>
+			</header>
+		</div>
+		
+		<div class="row container">
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>Quando</h4>
+					<p>Recepção - 08:00am</p>
+				</div>
+			</div>
+			
+			<div class="col s12 center-align">
+				<div class="detail">
+					<h4>Onde</h4>
+					<p>Rua Aprazível, 39 - Santa Teresa</p>
+					<p>Rio de Janeiro - RJ, 20241-270</p>
+				</div>
+			</div>
+
+			<div class="col s12 center-align cta top">
+				<a class="waves-effect waves-red btn-large white" href="https://maps.app.goo.gl/xrmPWUk9P8UJsgBS7"><i class="material-icons right primary">navigation</i>Navegar</a>
+			</div>
+
+			<!-- <div class="col s12 center-align">
+				<div class="detail">
+					<h4>Espaço</h4>
+					<div class="center-align ctl">	
+						<a class="waves-effect waves-red btn-large white" href="https://solarreal.com.br/">Solar Real</a>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
+</section>
+
+<section class="parallax-container" id="presenca">
+	<div class="parallax">
+		<img class="img-fundo" src="https://images.unsplash.com/photo-1515647433590-bd29995561a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb12326faa3207e1d8be58ded88a8dad&auto=format&fit=crop&w=1867&q=80">
+	</div>
+
+	<div class="row container center-align rsvp"  >
+		<header class="col s12">
+			<h1>Nós esperamos você...</h1>
+			<h5>Confirmar até setembro, 2024</h5>
+		</header>
+
+		<div class="col s12 center-align cta top">
+			<a class="waves-effect waves-red btn-large white" href="https://noivos.casar.com/cintia-e-henrique#/rsvp"><i class="material-icons right">today</i>Confirmar</a>
+		</div>
+
+		<div class="col s12 center-align" style="margin-top: 50px;">
+			<div class="detail">
+				<h5>Lista de Presentes</h4>
+			</div>
+		</div>
+
+		<div class="col s12 center-align cta top">
+			<a class="waves-effect waves-red btn-large white" href="https://noivos.casar.com/cintia-e-henrique#/presentes"><i class="material-icons right primary">redeem</i>Presentes</a>
+		</div>
+	</div>
+</section>
+
+<!-- partial -->
+<script src='assets/scripts/jquery/jquery.min.js'></script>
+<script src='assets/scripts/materialize/materialize.min.js'></script>
+<script src="assets/scripts/script.js"></script>
+
+</body>
 </html>

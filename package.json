@@ -1,0 +1,8 @@
+{
+    "scripts": {
+      "clean": "npx del dist",
+      "prebuild": "npm run clean",
+
+      "deploy": "npx firebase deploy"
+    }
+}

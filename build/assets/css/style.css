@@ -1,0 +1,296 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-weight: 300;
+	color: #fff;
+}
+
+.img-fundo {
+	-webkit-filter: grayscale(90%) contrast(50%) brightness(50%);
+	filter: grayscale(50%) contrast(80%) brightness(50%);
+}
+
+/* Hero section */
+
+.parallax-container {
+	height: 1024px;
+}
+
+/* Regular nav */
+
+.cor-menu {
+	background:#efeae0;
+}
+
+nav {
+	position: fixed;
+	z-index: 999;
+	color: grey;
+}
+
+nav i {
+	color: #000;
+}
+
+nav ul li a {
+	color: #424242;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+nav .brand-logo {
+	font-family: "Sacramento", cursive;
+	color: #424242;
+}
+
+/* Mobile nav */
+
+.side-nav li > a {
+	color: #eee;
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 32px;
+}
+
+.side-nav i.material-icons.right {
+	color: #eee;
+}
+
+/* Content in hero */
+
+.intro {
+	margin: 300px auto;
+	letter-spacing: 3px;
+	color: #fff;
+	font-weight: 300;
+}
+
+header h1 {
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: 6px;
+}
+
+header h4,
+header h5 {
+	color: #fff;
+	font-weight: 300;
+}
+
+/* Details */
+
+.info {
+	margin-top: 300px;
+}
+
+.info-intro {
+	margin-top: 300px;
+}
+
+/* RSVP section */
+
+.rsvp {
+	margin-top: 325px;
+	letter-spacing: 3px;
+}
+
+.cta {
+	margin-top: 50px;
+}
+
+.cta>a {
+	color: #424242;
+	font-weight: 600;
+}
+
+.ctl>a {
+	color: #424242;
+	font-weight: 600;
+}
+
+
+/* Contador */
+
+.parallax-contador {
+	position: relative;
+    overflow: hidden;
+	background: #efeae0;
+	color: #515e30;
+	/* height: 600px; */
+}
+
+.container-contador {
+	margin: 10px auto;
+	text-align: center;
+  }
+  
+  .container-contador h2 {
+	font-weight: normal;
+	letter-spacing: .125rem;
+	text-transform: uppercase;
+  }
+  
+  .container-contador li {
+	display: inline-block;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+  }
+  
+  .container-contador li span {
+	display: block;
+	font-size: 4.5rem;
+  }
+  
+
+  /* casal */
+
+  .frame-foto-color {
+	background: #efeae0;
+}
+
+.frame-foto {
+	position: relative;
+	overflow: hidden;
+  }
+
+.frame-foto img {
+	width: calc(100% - 480px);
+	/* width: 1434px; */
+	margin: auto;
+	display: block;
+	-webkit-filter: grayscale(90%) contrast(50%) brightness(50%);
+	filter: grayscale(10%) contrast(90%) brightness(90%);
+}
+
+.info-frame {
+	display: block;
+	height: 100%;
+}
+
+.info-frame-center{
+	position: relative;
+	background: #efeae0;
+	color: #515e30;
+	/* height: 100%; */
+	/* width: 1140px; */
+	width: calc(100% - 800px);
+	/* margin: -50px 0px 0px calc((100% - 980px)* 0.5); */
+	top: -330px;
+	margin-left: auto;
+    margin-right: auto; 
+ }
+
+
+ @media (max-width:1500px) and (min-width: 1200px) {
+	
+	.frame-foto img {
+		width: calc(100% - 160px);
+	}
+
+	.info-frame-center {
+		width: calc(100% - 400px);
+		top: -250px;
+	}
+}
+
+@media (max-width:1200px) and (min-width: 1000px) {
+	
+	.frame-foto img {
+		width: calc(100% - 160px);
+	}
+
+	.info-frame-center {
+		width: calc(100% - 300px);
+		top: -150px;
+	}
+}
+
+@media (max-width:1000px) and (min-width: 600px) {
+	
+	.frame-foto img {
+		width: calc(100% - 160px);
+	}
+
+	.info-frame-center {
+		width: calc(100% - 250px);
+		top: 0px;
+	}
+}
+
+ @media (max-width:600px) {
+	
+	.frame-foto img {
+		width: calc(100% - 80px);
+		/* width: 1434px; */
+	}
+
+	.info-frame-center {
+		width: calc(100% - 100px);
+		top: 0px;
+	}
+
+	.parallax-container {
+  		height: 768px;
+  	}
+
+  	.img-logo {
+		height: 80%;
+  	}
+  
+	.info-intro {
+		margin-top: 30px;
+	}
+
+	.info {
+		margin-top: 200px;
+	}
+	
+	.rsvp{
+		margin-top: 250px;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	h4, h5 {
+		font-size: 1.2em;
+	}
+
+	.container-contador h2 {
+		font-size: calc(1.5rem * var(--smaller));
+	}
+	  
+	.container-contador li {
+		font-size: calc(1.125rem * var(--smaller));
+	}
+	  
+	.container-contador li span {
+		font-size: calc(3.375rem * var(--smaller));
+	}
+}
+
+
+  /* @media all and (max-width: 768px) {
+	.container-contador h2 {
+	  font-size: calc(1.5rem * var(--smaller));
+	}
+	
+	.container-contador li {
+	  font-size: calc(1.125rem * var(--smaller));
+	}
+	
+	.container-contador li span {
+	  font-size: calc(3.375rem * var(--smaller));
+	}
+  } */

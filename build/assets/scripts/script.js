@@ -48,7 +48,7 @@ $(document).ready(function() {
 		});
 
 
-/////////
+///////// Contador
 (function () {
 	const second = 1000,
 		  minute = second * 60,

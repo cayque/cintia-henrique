@@ -93,3 +93,39 @@ $(document).ready(function() {
 		  //seconds
 		}, 0)
 	}());
+
+
+
+///carousel
+//   $(document).ready(function(){
+//     $('.carousel').carousel();
+//   });
+
+
+// $(document).ready(function(){
+//     $('.carousel').carousel();
+// });
+
+// $('.carousel.carousel-slider').carousel({
+//     fullWidth: true,
+// 	indicators: true
+// });
+
+$(document).ready(function(){
+	$('.carousel').carousel(
+	{
+	//   dist: 0,
+	//   padding: 300,
+	  //fullWidth: true,
+		// maxVisible: 3,
+	  	indicators: true,
+	  	duration: 300,
+	}
+	);
+  });
+  
+  autoplay()   
+  function autoplay() {
+	  $('.carousel').carousel('next');
+	  setTimeout(autoplay, 4500);
+  }

@@ -204,6 +204,44 @@ header h5 {
  }
 
 
+
+ /* preWedding */
+
+.parallax-preWedding{
+	height: 1024px;
+	position: relative;
+    overflow: hidden;
+	background: #efeae0;
+}
+
+/* .parallax-preWedding img{
+	width: 100%;
+	margin: auto;
+} */
+
+.info-carousel {
+	display: block;
+	height: 100%;
+	/* width: 100%; */
+}
+
+.carousel {
+	height: 1024px !important;
+}
+
+/* .carousel-item {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+  
+.carousel-item img {
+	height: 350px !important;
+	width: auto !important;
+	margin: auto !important;
+} */
+
+
  @media (max-width:1500px) and (min-width: 1200px) {
 	
 	.frame-foto img {

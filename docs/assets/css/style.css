@@ -214,27 +214,44 @@ header h5 {
 	background: #efeae0;
 }
 
-/* .parallax-preWedding img{
-	width: 100%;
-	margin: auto;
-} */
-
-.info-carousel {
+.info-preWedding {
 	display: block;
 	height: 100%;
-	/* width: 100%; */
+	align-content: center;
+	align-items: center;
 }
 
-.carousel {
+.slider {
+	height: calc(100% - 80px) !important;
+	width: calc(100% - 80px) !important;
+	margin: 40px;
+	/* height: 750px !important;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 60px; */
+}
+
+/* .slider h3 {
+	color: #000;
+}
+.slider h5 {
+	color: #000;
+} */
+/* .slides {
+	height: 700px !important;
+} */
+
+
+
+/* .carousel {
 	height: 1024px !important;
-}
-
+} */
 /* .carousel-item {
 	display: flex;
 	align-items: start;
 	justify-content: center;
 }
-  
 .carousel-item img {
 	height: 350px !important;
 	width: auto !important;

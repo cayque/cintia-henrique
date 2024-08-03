@@ -94,38 +94,44 @@ $(document).ready(function() {
 		}, 0)
 	}());
 
-
-
-///carousel
-//   $(document).ready(function(){
-//     $('.carousel').carousel();
+	
+	
+// // CAROUSEL JS
+// document.addEventListener('DOMContentLoaded', function() {
+// 	var elems = document.querySelectorAll('.carousel');
+// 	var instances = M.Carousel.init(elems, {
+// 	  indicators: true,
+// 	  padding: 200,
+// 	});
 //   });
 
-
+// // Or jQuery
 // $(document).ready(function(){
-//     $('.carousel').carousel();
-// });
-
-// $('.carousel.carousel-slider').carousel({
-//     fullWidth: true,
-// 	indicators: true
-// });
-
-$(document).ready(function(){
-	$('.carousel').carousel(
-	{
-	//   dist: 0,
-	//   padding: 300,
-	  //fullWidth: true,
-		// maxVisible: 3,
-	  	indicators: true,
-	  	duration: 300,
-	}
-	);
-  });
+// 	$('.carousel').carousel(
+// 	{
+// 	  dist: 0,
+// 	  padding: 0,
+// 	  fullWidth: true,
+// 	  indicators: true,
+// 	  duration: 100,
+// 	}
+// 	);
+//   });
   
-  autoplay()   
-  function autoplay() {
-	  $('.carousel').carousel('next');
-	  setTimeout(autoplay, 4500);
-  }
+//   autoplay()   
+//   function autoplay() {
+// 	  $('.carousel').carousel('next');
+// 	  setTimeout(autoplay, 4500);
+//   }
+
+
+//   document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.slider');
+//     var instances = M.Slider.init(elems, options);
+//   });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });

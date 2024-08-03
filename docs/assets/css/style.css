@@ -222,9 +222,12 @@ header h5 {
 }
 
 .slider {
-	height: calc(100% - 80px) !important;
+	height: calc(100% - 250px) !important;
 	width: calc(100% - 80px) !important;
-	margin: 40px;
+	margin-top: 125px;
+	margin-bottom: 125px;
+	margin-left: 40px;
+	margin-right: 40px;
 	/* height: 750px !important;
 	width: calc(100% - 80px);
 	margin-left: 40px;
